@@ -4,26 +4,28 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kukula Privacy Policy</title>
-<style>
-  :root { --bg:#fff8ee; --text:#1a1208; --muted:#5c4020; --accent:#c46a0d; --line:#e8d5b0; }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg:#1a1208; --text:#f5e6c8; --muted:#ad9070; --accent:#ffb347; --line:#4a3520; }
-  }
-  body { margin:0; background:var(--bg); color:var(--text);
-         font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans Sinhala", sans-serif; }
-  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
-  h1 { font-size:1.8rem; margin:0 0 4px; }
-  h2 { font-size:1.2rem; margin:32px 0 8px; color:var(--accent); }
-  .meta { color:var(--muted); margin:0 0 24px; }
-  ul { padding-left:1.2rem; }
-  a { color:var(--accent); }
-  hr { border:0; border-top:1px solid var(--line); margin:48px 0; }
-  nav a { margin-right:16px; }
-</style>
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/lang.js"></script>
 </head>
 <body>
-<main>
-<nav><a href="#en">English</a><a href="#si">සිංහල</a><a href="delete-account.html">Delete your account</a></nav>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/icon.png" alt="">Kukula</a>
+    <nav>
+      <a class="hide-sm" href="index.html"><span class="tr" lang="en">Home</span><span class="tr" lang="si">මුල් පිටුව</span></a>
+      <a href="privacy.html" aria-current="page"><span class="tr" lang="en">Privacy</span><span class="tr" lang="si">පෞද්ගලිකත්වය</span></a>
+      <a href="delete-account.html"><span class="tr" lang="en">Delete account</span><span class="tr" lang="si">ගිණුම මකන්න</span></a>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-set-lang="en">EN</button>
+      <button type="button" data-set-lang="si">සිං</button>
+    </div>
+  </div>
+</header>
+
+<main class="doc">
+<p class="lang-links"><a href="#en">English</a><a href="#si">සිංහල</a></p>
 
 <section id="en" lang="en">
 <h1>Kukula Privacy Policy</h1>
@@ -145,5 +147,17 @@
 <p><a href="mailto:kukula.support@gmail.com">kukula.support@gmail.com</a></p>
 </section>
 </main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Kukula</span>
+    <span>
+      <a href="index.html">Kukula</a> ·
+      <a href="privacy.html"><span class="tr" lang="en">Privacy Policy</span><span class="tr" lang="si">පෞද්ගලිකත්ව ප්‍රතිපත්තිය</span></a> ·
+      <a href="delete-account.html"><span class="tr" lang="en">Delete account</span><span class="tr" lang="si">ගිණුම මකන්න</span></a> ·
+      <a href="mailto:kukula.support@gmail.com">kukula.support@gmail.com</a>
+    </span>
+  </div>
+</footer>
 </body>
 </html>

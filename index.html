@@ -1,27 +1,129 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kukula</title>
-<style>
-  :root { --bg:#fff8ee; --text:#1a1208; --accent:#c46a0d; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#1a1208; --text:#f5e6c8; --accent:#ffb347; } }
-  body { margin:0; background:var(--bg); color:var(--text);
-         font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans Sinhala", sans-serif; }
-  main { max-width:760px; margin:0 auto; padding:48px 16px; }
-  a { color:var(--accent); }
-</style>
+<title>Kukula — Poultry Farm Records</title>
+<meta name="description" content="Kukula keeps a poultry farm's records in one app: eggs, broiler batches, feed, vaccinations, sales and money owed. In Sinhala and English, works offline.">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/lang.js"></script>
 </head>
 <body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/icon.png" alt="">Kukula</a>
+    <nav>
+      <a class="hide-sm" href="#features"><span class="tr" lang="en">Features</span><span class="tr" lang="si">විශේෂාංග</span></a>
+      <a href="privacy.html"><span class="tr" lang="en">Privacy</span><span class="tr" lang="si">පෞද්ගලිකත්වය</span></a>
+      <a class="hide-sm" href="#contact"><span class="tr" lang="en">Contact</span><span class="tr" lang="si">සම්බන්ධ වන්න</span></a>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-set-lang="en">EN</button>
+      <button type="button" data-set-lang="si">සිං</button>
+    </div>
+  </div>
+</header>
+
 <main>
-<h1>Kukula</h1>
-<p>Farm records for poultry farmers · කුකුළු ගොවීන් සඳහා ගොවිපල සටහන්</p>
-<ul>
-  <li><a href="privacy.html">Privacy Policy · පෞද්ගලිකත්ව ප්‍රතිපත්තිය</a></li>
-  <li><a href="delete-account.html">Delete your account · ගිණුම මකන්න</a></li>
-</ul>
-<p>Contact: <a href="mailto:kukula.support@gmail.com">kukula.support@gmail.com</a></p>
+  <section class="hero">
+    <div>
+      <h1>
+        <span class="tr" lang="en">Your poultry farm's records, in one app</span>
+        <span class="tr" lang="si">ඔබේ කුකුළු ගොවිපලේ සටහන් එකම යෙදුමක</span>
+      </h1>
+      <p class="lead">
+        <span class="tr" lang="en">Record eggs, broiler batches, feed, vaccinations and sales in a few taps. See your profit, who owes you money, and what needs doing today — in Sinhala or English.</span>
+        <span class="tr" lang="si">බිත්තර, බ්‍රොයිලර් බැච්, කෑම, එන්නත් සහ විකුණුම් තට්ටු කිහිපයකින් සටහන් කරන්න. ලාභය, ඔබට මුදල් ගෙවිය යුත්තේ කවුද, සහ අද කළ යුතු දේ — සිංහලෙන් හෝ ඉංග්‍රීසියෙන් බලන්න.</span>
+      </p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.kukulaapp.kukula_app">
+          ▶ <span class="tr" lang="en">Get it on Google Play</span><span class="tr" lang="si">Google Play වෙතින් ලබා ගන්න</span>
+        </a>
+        <a class="btn btn-ghost" href="#features">
+          <span class="tr" lang="en">See features</span><span class="tr" lang="si">විශේෂාංග බලන්න</span>
+        </a>
+      </div>
+      <p class="note">
+        <span class="tr" lang="en">Free to start · Android 7 and newer</span>
+        <span class="tr" lang="si">නොමිලේ ආරම්භ කරන්න · Android 7 සහ ඉහළ</span>
+      </p>
+    </div>
+    <div class="art"><img src="assets/icon.png" alt="Kukula app icon"></div>
+  </section>
+
+  <section class="block" id="features">
+    <h2><span class="tr" lang="en">Everything a poultry farm tracks</span><span class="tr" lang="si">කුකුළු ගොවිපලකට අවශ්‍ය සියල්ල</span></h2>
+    <p><span class="tr" lang="en">Made for layer farms, broiler farms, and farms that do both.</span><span class="tr" lang="si">බිත්තර ගොවිපල, බ්‍රොයිලර් ගොවිපල සහ දෙකම කරන ගොවිපල සඳහා.</span></p>
+    <div class="grid">
+      <div class="card"><div class="icon">🥚</div>
+        <h3><span class="tr" lang="en">Eggs</span><span class="tr" lang="si">බිත්තර</span></h3>
+        <p><span class="tr" lang="en">Daily collection, broken eggs, grading, stock on hand and egg sales by tray or egg.</span><span class="tr" lang="si">දිනපතා එකතුව, බිඳුණු බිත්තර, ශ්‍රේණිගත කිරීම, ඇති තොගය සහ ට්‍රේ / බිත්තර වශයෙන් විකුණුම්.</span></p></div>
+      <div class="card"><div class="icon">🐔</div>
+        <h3><span class="tr" lang="en">Broiler batches</span><span class="tr" lang="si">බ්‍රොයිලර් බැච්</span></h3>
+        <p><span class="tr" lang="en">Birds in and out, deaths, sales by bird or kg, and the real profit of every batch.</span><span class="tr" lang="si">කුකුළන් ඇතුළු වීම සහ පිටවීම, මරණ, කුකුළන් හෝ kg වශයෙන් විකුණුම්, සහ සෑම බැච් එකකම සැබෑ ලාභය.</span></p></div>
+      <div class="card"><div class="icon">🌾</div>
+        <h3><span class="tr" lang="en">Feed</span><span class="tr" lang="si">කුකුළු කෑම</span></h3>
+        <p><span class="tr" lang="en">Bags bought, feed given to each flock or batch, cost, and a warning before you run out.</span><span class="tr" lang="si">මිලදී ගත් බෑග්, එක් එක් රංචුවට / බැච් එකට දුන් කෑම, වියදම, සහ අවසන් වීමට පෙර අනතුරු ඇඟවීමක්.</span></p></div>
+      <div class="card"><div class="icon">💉</div>
+        <h3><span class="tr" lang="en">Health &amp; vaccines</span><span class="tr" lang="si">සෞඛ්‍ය සහ එන්නත්</span></h3>
+        <p><span class="tr" lang="en">Vaccination schedules, treatments and medicine stock with expiry dates.</span><span class="tr" lang="si">එන්නත් කාලසටහන්, ප්‍රතිකාර සහ කල් ඉකුත් වන දින සමඟ බෙහෙත් තොගය.</span></p></div>
+      <div class="card"><div class="icon">💰</div>
+        <h3><span class="tr" lang="en">Money</span><span class="tr" lang="si">මුදල්</span></h3>
+        <p><span class="tr" lang="en">Income, expenses and profit by month, with a clear picture of where money goes.</span><span class="tr" lang="si">මාසය අනුව ආදායම්, වියදම් සහ ලාභය, මුදල් යන තැන පැහැදිලිව.</span></p></div>
+      <div class="card"><div class="icon">🤝</div>
+        <h3><span class="tr" lang="en">Credit sales</span><span class="tr" lang="si">ණයට විකුණුම්</span></h3>
+        <p><span class="tr" lang="en">Who owes you, how much, and since when — buyers and suppliers in one list.</span><span class="tr" lang="si">කවුද ගෙවිය යුත්තේ, කොපමණද, කවදා සිටද — ගැනුම්කරුවන් සහ සැපයුම්කරුවන් එකම ලැයිස්තුවක.</span></p></div>
+      <div class="card"><div class="icon">🐓</div>
+        <h3><span class="tr" lang="en">Livestock trading</span><span class="tr" lang="si">කුකුළු වෙළඳාම</span></h3>
+        <p><span class="tr" lang="en">Live birds bought by the kg, meat sold, wastage and profit per supplier.</span><span class="tr" lang="si">kg වශයෙන් මිලදී ගත් පණපිටින් කුකුළන්, විකුණූ මස්, නාස්තිය සහ සැපයුම්කරු අනුව ලාභය.</span></p></div>
+      <div class="card"><div class="icon">🔔</div>
+        <h3><span class="tr" lang="en">Reminders</span><span class="tr" lang="si">සිහිකැඳවීම්</span></h3>
+        <p><span class="tr" lang="en">Vaccinations due, low feed and medicine, payments overdue, and a daily nudge to record.</span><span class="tr" lang="si">නියමිත එන්නත්, අඩු කෑම සහ බෙහෙත්, පරක්කු ගෙවීම්, සහ දිනපතා සටහන් කිරීමට මතක් කිරීමක්.</span></p></div>
+    </div>
+  </section>
+
+  <div class="band">
+    <div class="inner">
+      <div>
+        <h3><span class="tr" lang="en">📶 Works without internet</span><span class="tr" lang="si">📶 අන්තර්ජාලය නැතිවත් වැඩ</span></h3>
+        <p><span class="tr" lang="en">Record on the farm; it syncs when you are back online.</span><span class="tr" lang="si">ගොවිපලේදී සටහන් කරන්න; අන්තර්ජාලය ආ විට සමමුහුර්ත වේ.</span></p>
+      </div>
+      <div>
+        <h3><span class="tr" lang="en">👥 Your whole team</span><span class="tr" lang="si">👥 මුළු කණ්ඩායමම</span></h3>
+        <p><span class="tr" lang="en">Invite workers; they record, you decide what they can see.</span><span class="tr" lang="si">සේවකයන් එකතු කරන්න; ඔවුන් සටහන් කරයි, ඔවුන්ට පෙනෙන දේ ඔබ තීරණය කරයි.</span></p>
+      </div>
+      <div>
+        <h3><span class="tr" lang="en">📄 PDF reports</span><span class="tr" lang="si">📄 PDF වාර්තා</span></h3>
+        <p><span class="tr" lang="en">Eggs, batches, feed, health, livestock and money — ready to share or print.</span><span class="tr" lang="si">බිත්තර, බැච්, කෑම, සෞඛ්‍ය, කුකුළු වෙළඳාම සහ මුදල් — බෙදා ගැනීමට හෝ මුද්‍රණයට.</span></p>
+      </div>
+      <div>
+        <h3><span class="tr" lang="en">🔒 Your data stays yours</span><span class="tr" lang="si">🔒 ඔබේ දත්ත ඔබටමයි</span></h3>
+        <p><span class="tr" lang="en">No ads. Back it up any time, delete it any time.</span><span class="tr" lang="si">දැන්වීම් නැත. ඕනෑම වේලාවක backup කරන්න, ඕනෑම වේලාවක මකන්න.</span></p>
+      </div>
+    </div>
+  </div>
+
+  <section class="block" id="contact">
+    <h2><span class="tr" lang="en">Questions?</span><span class="tr" lang="si">ප්‍රශ්න තිබේද?</span></h2>
+    <p>
+      <span class="tr" lang="en">Email us — we read every message.</span>
+      <span class="tr" lang="si">අපට email කරන්න — සෑම පණිවිඩයක්ම කියවමු.</span>
+    </p>
+    <a class="btn btn-ghost" href="mailto:kukula.support@gmail.com">✉ kukula.support@gmail.com</a>
+  </section>
 </main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Kukula</span>
+    <span>
+      <a href="privacy.html"><span class="tr" lang="en">Privacy Policy</span><span class="tr" lang="si">පෞද්ගලිකත්ව ප්‍රතිපත්තිය</span></a> ·
+      <a href="delete-account.html"><span class="tr" lang="en">Delete account</span><span class="tr" lang="si">ගිණුම මකන්න</span></a> ·
+      <a href="mailto:kukula.support@gmail.com">kukula.support@gmail.com</a>
+    </span>
+  </div>
+</footer>
 </body>
 </html>
